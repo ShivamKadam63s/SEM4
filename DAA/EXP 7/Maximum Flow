@@ -8,3 +8,13 @@ It follows the pseudocode:
           if (u,v) is in G: f(u,v) = f(u,v) + cf(p)
           else:          f(v,u) = f(v,u) - cf(p)
   return f (and the maximum flow is the net flow out of s)
+
+The Edmond-Karp (Ford-Fulkerson) function:
+  - n: number of vertices
+  - s: source index
+  - t: sink index
+  - capacity[][]: the capacity matrix of the graph
+ 
+ Returns the maximum flow from s to t and prints
+ intermediate steps (augmenting paths, flow updates, etc.)
+

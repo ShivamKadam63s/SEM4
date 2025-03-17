@@ -44,6 +44,12 @@ void KMP(const char *pattern, const char *text) {
     }
     computePrefixFunction(pattern, prefixArray);
 
+    printf("Prefix Array: ");
+    for (int i = 0; i < m; i++) {
+        printf("%d ", prefixArray[i]);
+    }
+    printf("\n");
+
     // 'q' is the number of characters matched so far
     int q = 0;
 
